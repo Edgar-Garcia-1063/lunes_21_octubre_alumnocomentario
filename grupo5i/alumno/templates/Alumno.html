@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>comentarios</title>
+</head>
+<body>
+    <h1>un alumno y sus mensas osea comentarips</h1>
+    <h1>{{objeto.nombre}}</h1>
+    <ul>
+    {% for i in objeto.frase_set.all %}
+    <li> {{i.comentario}}</li>
+
+    {% endfor %}
+    </ul>
+</body>
+</html>
